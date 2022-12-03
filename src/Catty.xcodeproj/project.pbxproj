@@ -4730,6 +4730,7 @@
 		F4E6E5C7210E255D00D86FE6 /* FalseFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FalseFunction.swift; sourceTree = "<group>"; };
 		F511044FACC2C8E38A678BB4 /* chr */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = chr; path = chr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FB40BD936AE254501FBA2E03 /* kn */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = kn; path = kn.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FE4134EF293799730001DA11 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -8244,6 +8245,7 @@
 			isa = PBXGroup;
 			children = (
 				92300CE918B2196700F2B4DC /* Localizable.strings */,
+				FE4134EF293799730001DA11 /* InfoPlist.strings */,
 			);
 			name = Localization;
 			path = Resources/Localization;
