@@ -38,11 +38,19 @@
 {
     self.textLabel = inlineViewSubViews[0];
     self.noteTextField = inlineViewSubViews[1];
+    [self.noteTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
 }
 
 - (NSString*)brickTitleForBackground:(BOOL)isBackground andInsertionScreen:(BOOL)isInsertion
 {
     return [kLocalizedNote stringByAppendingString:@" %@"];
+}
+
+- (IBAction) textFieldDidChange: (UITextField*) textField
+{
+    [UIView animateWithDuration:0.1 animations:^{
+        [textField invalidateIntrinsicContentSize];
+    }];
 }
 
 - (NSArray<NSString*>*)parameters
